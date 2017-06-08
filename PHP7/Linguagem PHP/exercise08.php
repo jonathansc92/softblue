@@ -8,33 +8,23 @@
 
   / */
 
-$x = 13;
 
-
-
-for ($i = $x; $i > 1; $i--) {
+//for ($i = $x; $i > 1; $i--) {
+function calc($x) {
     switch ($x % 2) {
         case 0:
-            $y = $x / 2;
-
-            for ($i = 1; $i < $y; $i--) {
-                echo $i;
-            }
-
+            echo $y = $x / 2;
 
             break;
 
         default:
-            $y = $x / 2;
-            if ($i % 2 == 0) {
+            echo $y = 3 * $x + 1;
 
-
-                echo " $i ";
-            } else {
-                $y = 3 * $x + 1;
-
-                echo $y;
-            }
+            break;
+        
+        if($y !=1)
+            calc($x);
     }
-    break;
 }
+
+calc(13);
