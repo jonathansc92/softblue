@@ -1,8 +1,8 @@
 <?php
 
-require_once './Sum.php';
+require_once './Grade.php';
 
-$factorial = new Sum();
+$grade = new Grade();
 
-echo $factorial->valueFactorial(4);
+echo $grade->totalGrade(10, 9, 8, 3, 2, 5);
 ?>
